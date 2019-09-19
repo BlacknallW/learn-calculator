@@ -9,6 +9,24 @@ const input = document.getElementById("input"), // input/output button
 let resultDisplayed = false; // flag to keep an eye on what output is displayed
 
 // numbers is a NodeList object, we need to make it into an array first, then we can map through it...
+numbers.forEach(function(number){
+    number.addEventListener("click", function(e) {
+        if (clear.addEventListener("click", function(e) {
+            input.innerHTML = ""
+        })){
+            input.innerHTML = ""
+        }
+        else{
+            input.innerHTML += this.innerHTML;
+        }
+    });
+});
+
+operators.forEach(function(operator){
+    operator.addEventListener("click", function(e) {
+        input.innerHTML += this.innerHTML;
+    });
+});
 
 // adding click handlers to the calculation buttons
 
